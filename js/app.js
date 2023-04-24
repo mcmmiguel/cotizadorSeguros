@@ -24,6 +24,10 @@ UI.prototype.llenarOpciones = () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () =>{
+//Instanciar UI
+const ui = new UI();
+console.log(ui);
 
+document.addEventListener('DOMContentLoaded', () =>{
+    ui.llenarOpciones();
 });
